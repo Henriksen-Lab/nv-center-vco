@@ -11,4 +11,5 @@ interpolatedCurve = np.load(
 
 def voltageToFrequency(voltage):
     '''Returns the frequency outputted for a given voltage based on a linear univariate spline interpolation with S=0.0001'''
-    return interpolatedCurve(voltage)
+    microwaveFrequency = interpolatedCurve(voltage)
+    return microwaveFrequency
